@@ -16,7 +16,7 @@ Body{
 }
 
 .container{
-    max-width: 375px;
+    width: 375px;
     height: 900px;
     display: flex;
     justify-content: space-evenly;
@@ -26,42 +26,49 @@ Body{
     
 }
 
+.switchbox{
+    flex-direction:column ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 300px;
+    
+    
+}
+
 .variation{
+    padding-left: 50px;
+    padding-right: 50px;
     width:375px;
     height:150px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
 .invisible{
     width:375px;
     height:150px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 
 }
 
 .topbox1{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     background-color: white;
 
 }
+
 
 .topbox2{
-    width: 75px;
-    height: 75px;
-    background-color: white;
-
-}
-
-.topbox3{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 70px;
     background-color: white;
 
 }
@@ -75,9 +82,33 @@ Body{
 
 }
 
+.collumnbox{
+    height: 600px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cbox{
+    width: 90px;
+    height: 120px;
+    background-color: aqua;
+
+}
+
+.bigboybox{
+    width: 200px;
+    height:500px;
+    margin-left: 12px;
+    margin-top: 30px;
+    background-color:white;
+}
 
 
-@media screen (width:500px){
+
+@media screen and (min-width:500px){
     
 
     .container{
@@ -85,17 +116,61 @@ Body{
         
     }
 
+    .switchbox{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        width: 500px;
+        height: 300px;
 
+    }
+
+    .variation{
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 100px;
+        width: 300px;
+        
+    }
 
     .invisible{
-        visibility:none;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+       
+    }
 
+    .topbox1{
+        width: 100px;
+        height: 100px;
+
+
+    }
+
+    .topbox2{
+        width: 100px;
+        height: 100px;
+        
     }
 
     .subcontainer{
+        min-height: 600px;
         width:500px;
-
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
+    .collumnbox{
+        flex-direction: row;
+        height: 200px;
+        width: 500px;
+    }
+
+    .bigboybox{
+        width: 300px;
+        height: 300px;
+    }
 
 }
